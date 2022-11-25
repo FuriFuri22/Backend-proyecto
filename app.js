@@ -16,6 +16,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 app.use(require('./src/routes/User.routes'));
-app.use(require('./src/routes/Donaciones.routes'))
+app.use(require('./src/routes/Donaciones.routes'));
+app.use(require('./src/routes/Peticiones.routes'));
 
 app.listen(port, ()=>console.log(`Rick, estamos en curso por http://localhost:${port}`));
